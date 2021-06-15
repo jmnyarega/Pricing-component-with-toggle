@@ -1,0 +1,50 @@
+.card {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px 0px hsla(0, 0%, 0%, 0.4);
+    color: white;
+    margin-bottom: 3rem;
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: normal;
+        margin-bottom: 1.5rem;
+    }
+
+    &--basic, &--master {
+        background-color: #666362;
+    }
+
+    &--professional {
+        background-color: #3D0C02;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+        .currency {
+            font-size: 2rem;
+        }
+        .amount {
+            font-size: 5rem;
+        }
+    }
+
+    &__features {
+        ul {
+            list-style: none;
+            border-top: 1px solid;
+        }
+
+        li {
+            border-bottom: 1px solid;
+            padding: 1rem;
+        }
+    }
+
+    &__button {
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    // inheriting from html makes it easier to change box-sizing in plugins or other
+    // components that leverage other behavior. I won't be using any on this project, def a good to have
+    box-sizing: inherit;
+
+    /*
+     *  margin/padding resets help enforce style consistency across different browsers
+     *  with a clean slate for styling elements.
+     */
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $font-family;
+    font-size: $font-size;
+
+    max-width: 1440px;
+    width: 80%;
+    margin: 5% auto;
+
+    text-align: center;
+    background-color: $light-grayish-blue;
+}

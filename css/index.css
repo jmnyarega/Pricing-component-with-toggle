@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  /*
+     *  margin/padding resets help enforce style consistency across different browsers
+     *  with a clean slate for styling elements.
+     */
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9375rem;
+  max-width: 1440px;
+  width: 80%;
+  margin: 5% auto;
+  text-align: center;
+  background-color: #b3b5c6; }
+
+.cycle {
+  margin-bottom: 4rem; }
+  .cycle__title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem; }
+
+.card {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  color: white;
+  margin-bottom: 3rem; }
+  .card__title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1.5rem; }
+  .card--basic, .card--master {
+    background-color: #666362; }
+  .card--professional {
+    background-color: #3D0C02; }
+  .card__price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem; }
+    .card__price .currency {
+      font-size: 2rem; }
+    .card__price .amount {
+      font-size: 5rem; }
+  .card__features ul {
+    list-style: none;
+    border-top: 1px solid; }
+  .card__features li {
+    border-bottom: 1px solid;
+    padding: 1rem; }
+  .card__button {
+    margin-top: 2rem; }
+
+.button {
+  text-decoration: none;
+  display: block;
+  padding: 0.7rem 2rem;
+  border-radius: 0.5rem;
+  background-color: black;
+  border: 1px solid black;
+  text-transform: uppercase; }
+  .button:active, .button:link, .button:visited {
+    color: white; }
+  .button:hover, .button:focus {
+    border: 1px solid;
+    background-color: transparent;
+    transition: all 350ms ease-in-out; }
