@@ -1,8 +1,8 @@
 .card {
     padding: 2rem;
     border-radius: 0.5rem;
-    box-shadow: 0px 0px 10px 0px hsla(0, 0%, 0%, 0.4);
-    color: white;
+    box-shadow: $box-shadow;
+    color: $white;
     margin-bottom: 3rem;
 
     &__title {
@@ -12,11 +12,47 @@
     }
 
     &--basic, &--master {
-        background-color: #666362;
+        background-color: $white;
+        color: $dark-grayish-blue;
+
+        .button {
+            background: $linear-gradient;
+
+            &:active,
+            &:link,
+            &:visited {
+                color: $white;
+            }
+
+            &:hover,
+            &:focus {
+                background: $white;
+                border: 1px solid $grayish-blue;
+                color: $grayish-blue;
+            }
+        }
     }
 
     &--professional {
-        background-color: #3D0C02;
+        background: $linear-gradient;
+        .button {
+            background: $white;
+
+            &:active,
+            &:link,
+            &:visited {
+                color: $grayish-blue;
+            }
+
+            &:hover,
+            &:focus {
+                background: transparent;
+                border: 1px solid $white;
+                color: $white;
+
+                transition: all 350ms ease-in-out;
+            }
+        }
     }
 
     &__price {
@@ -28,23 +64,38 @@
             font-size: 2rem;
         }
         .amount {
-            font-size: 5rem;
+            font-size: 3rem;
         }
     }
 
     &__features {
         ul {
             list-style: none;
-            border-top: 1px solid;
+            border-top: 1px solid $light-grayish-blue;
         }
 
         li {
-            border-bottom: 1px solid;
+            border-bottom: 1px solid $light-grayish-blue;
             padding: 1rem;
         }
     }
 
     &__button {
         margin-top: 2rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .card {
+        min-width: 25rem;
+
+        &__price {
+            .currency {
+                font-size: 2rem;
+            }
+            .amount {
+                font-size: 5rem;
+            }
+        }
     }
 }

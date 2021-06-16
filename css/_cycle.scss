@@ -1,7 +1,18 @@
 .cycle {
     margin-bottom: 4rem;
     &__title {
-        font-size: 1.5rem;
+        color: $dark-grayish-blue;
+        font-size: 2rem;
         margin-bottom: 1.5rem;
+    }
+
+    label {
+        color: $grayish-blue;
+    }
+}
+
+@media (min-width: 600px) {
+    .cycle {
+        margin-bottom: 6rem;
     }
 }
