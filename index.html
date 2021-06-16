@@ -24,10 +24,13 @@
       <div class="cycle">
         <h3 class="cycle__title">Our Pricing</h3>
         <div class="cycle__switch">
-          <label for="annual">Annually</label>
-          <input type="radio" name="switch" id="annual" value="annual" />
+          <input type="radio" name="switch" id="monthly" />
           <label for="monthly">Annually</label>
-          <input type="radio" name="switch" id="monthly" value="monthly" />
+          <div class="radio" id="radio">
+            <div class="dot" id="dot"></div>
+          </div>
+          <input type="radio" name="switch" id="annually" />
+          <label for="annually">Monthly</label>
         </div>
       </div>
       <div class="plans">
@@ -81,6 +84,6 @@
         </div>
       </div>
     </main>
+    <script src="./js/index.js"></script>
   </body>
 </html>
-

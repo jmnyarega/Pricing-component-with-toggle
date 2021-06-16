@@ -73,3 +73,33 @@ body {
     border: 1px solid;
     background-color: transparent;
     transition: all 350ms ease-in-out; }
+
+.cycle .radio {
+  background-color: #555D50;
+  border-radius: 99rem;
+  width: 4rem;
+  height: 2rem;
+  position: relative;
+  cursor: pointer; }
+  .cycle .radio .dot {
+    position: absolute;
+    left: 0.26667rem;
+    margin: 0.33333rem 0;
+    padding: 0.66667rem;
+    border-radius: 50%;
+    background-color: white; }
+
+.cycle__switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem; }
+  .cycle__switch input {
+    position: absolute;
+    opacity: 0; }
+  .cycle__switch label {
+    border-bottom: 1px solid;
+    border-bottom-width: 0;
+    cursor: pointer; }
+  .cycle__switch label:hover {
+    border-bottom-width: 1px; }

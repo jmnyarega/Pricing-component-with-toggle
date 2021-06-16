@@ -1,0 +1,46 @@
+.cycle {
+    .radio {
+        $width: 4rem;
+        $height: $width / 2;
+        $padding: $height / 3;
+        background-color: #555D50;
+        border-radius: 99rem;
+
+        width: $width;
+        height: $height;
+        position: relative;
+
+        cursor: pointer;
+
+        .dot {
+            position: absolute;
+            left: $width / 15;
+            margin: ($height - ($padding * 2)) / 2 0;
+            padding: $padding;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+    }
+    &__switch {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1rem;
+
+        input {
+            position: absolute;
+            opacity: 0;
+        }
+
+        label {
+            border-bottom: 1px solid;
+            border-bottom-width: 0;
+            cursor: pointer;
+        }
+
+        label:hover {
+            border-bottom-width: 1px;
+        }
+    }
+}
