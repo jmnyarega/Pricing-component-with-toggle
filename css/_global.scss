@@ -51,17 +51,34 @@ body {
     display: none;
 }
 
-@media (min-width: 600px) {
+/*
+
+ 1500 - 187.5px
+
+
+*/
+
+@media (min-width: 1500px) {
+    .pattern-top {
+        right: 0;
+        bottom: 375px * 0.5; // half the height of the image (375)
+    }
 
     .pattern-bottom {
         display: block;
     }
+}
+
+@media (min-width: 600px) {
+
+    .pattern-bottom {
+        display: block;
+        left: -187.5px;
+    }
 
     .pattern-top {
-        position: absolute;
-        right: 0;
+        right: -(375px * 0.5);
         bottom: 375px * 0.5; // half the height of the image (375)
-        z-index: -1;
 
         left: initial;
         top: initial;

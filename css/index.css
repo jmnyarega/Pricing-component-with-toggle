@@ -39,14 +39,26 @@ body {
   left: -70px;
   display: none; }
 
+/*
+
+ 1500 - 187.5px
+
+
+*/
+@media (min-width: 1500px) {
+  .pattern-top {
+    right: 0;
+    bottom: 187.5px; }
+  .pattern-bottom {
+    display: block; } }
+
 @media (min-width: 600px) {
   .pattern-bottom {
-    display: block; }
+    display: block;
+    left: -187.5px; }
   .pattern-top {
-    position: absolute;
-    right: 0;
+    right: -187.5px;
     bottom: 187.5px;
-    z-index: -1;
     left: initial;
     top: initial; }
   .plans {
