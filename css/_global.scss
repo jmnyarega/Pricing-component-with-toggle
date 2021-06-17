@@ -31,10 +31,42 @@ body {
     margin: 5% auto;
 
     text-align: center;
-    background-color: $very-light-grayish-blue;
+    background: $very-light-grayish-blue;
+    position: relative;
+}
+
+.pattern-top {
+    position: absolute;
+    left: 375px * 0.5;
+    top: -20px;
+    z-index: -1;
+}
+
+.pattern-bottom {
+    position: absolute;
+    bottom: -101px;
+    z-index: -1;
+    left: -70px;
+
+    display: none;
 }
 
 @media (min-width: 600px) {
+
+    .pattern-bottom {
+        display: block;
+    }
+
+    .pattern-top {
+        position: absolute;
+        right: 0;
+        bottom: 375px * 0.5; // half the height of the image (375)
+        z-index: -1;
+
+        left: initial;
+        top: initial;
+    }
+
     .plans {
         display: grid;
         justify-content: center;
