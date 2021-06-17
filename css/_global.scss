@@ -17,10 +17,6 @@ html {
     margin: 0;
 }
 
-/*
- * Price font's too big for mobile
- *
- */
 
 body {
     font-family: $font-family;
@@ -50,13 +46,6 @@ body {
 
     display: none;
 }
-
-/*
-
- 1500 - 187.5px
-
-
-*/
 
 @media (min-width: 1500px) {
     .pattern-top {
