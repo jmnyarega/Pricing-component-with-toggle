@@ -44,7 +44,6 @@
         }
     }
     &:focus-within .radio {
-        outline: 2px solid $light-grayish-blue;
-        outline-offset: 3px;
+        box-shadow: 0 0 0 2px $white, 0 0 0 4px $light-grayish-blue;
     }
 }
