@@ -50,12 +50,9 @@ body {
 @media (min-width: 600px) {
     body {
         background-image: url(../images/bg-bottom.svg), url(../images/bg-top.svg);
-        background-position: -9vw bottom, right top;
+        background-position: -9vw bottom, 80vw top;
         background-repeat: no-repeat, no-repeat;
-        background-size: 30vw, 27vw;
-
-        min-height: unset;
-        max-height: 100vh;
+        background-size: 25vw, 28vw;
     }
 
     .plans {

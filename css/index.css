@@ -35,11 +35,9 @@ body {
 @media (min-width: 600px) {
   body {
     background-image: url(../images/bg-bottom.svg), url(../images/bg-top.svg);
-    background-position: -9vw bottom, right top;
+    background-position: -9vw bottom, 80vw top;
     background-repeat: no-repeat, no-repeat;
-    background-size: 30vw, 27vw;
-    min-height: unset;
-    max-height: 100vh; }
+    background-size: 25vw, 28vw; }
   .plans {
     display: grid;
     justify-content: center;
@@ -167,5 +165,9 @@ body {
     border-bottom: 1px solid;
     border-bottom-width: 0;
     cursor: pointer; }
-  .cycle__switch label:hover {
-    border-bottom-width: 1px; }
+    .cycle__switch label:hover {
+      border-bottom-width: 1px; }
+
+.cycle:focus-within .radio {
+  outline: 2px solid #b3b5c6;
+  outline-offset: 3px; }
