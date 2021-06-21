@@ -35,7 +35,7 @@ function to_yearly() {
 }
 
 function to_monthly() {
-  target.style.transform = "translateX(2rem)";
+  target.style.transform = "translateX(2.5rem)";
   target.style.transition = "all ease-in-out 350ms";
 
   basic.innerHTML = prices.monthly[0];

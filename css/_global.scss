@@ -15,6 +15,7 @@ html {
      */
     padding: 0;
     margin: 0;
+    // outline: 1px solid;
 }
 
 
@@ -27,24 +28,12 @@ body {
     margin: 5% auto;
 
     text-align: center;
-    background: $very-light-grayish-blue;
     position: relative;
-}
 
-.pattern-top {
-    position: absolute;
-    left: 375px * 0.5;
-    top: -20px;
-    z-index: -1;
-}
-
-.pattern-bottom {
-    position: absolute;
-    bottom: -101px;
-    z-index: -1;
-    left: -70px;
-
-    display: none;
+    min-height: 100vh;
+    background: no-repeat url(../images/bg-top.svg) $very-light-grayish-blue;
+    background-position: 57vw -8vw;
+    background-size: 90%;
 }
 
 @media (min-width: 1500px) {
@@ -59,18 +48,14 @@ body {
 }
 
 @media (min-width: 600px) {
+    body {
+        background-image: url(../images/bg-bottom.svg), url(../images/bg-top.svg);
+        background-position: -9vw bottom, right top;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 30vw, 27vw;
 
-    .pattern-bottom {
-        display: block;
-        left: -187.5px;
-    }
-
-    .pattern-top {
-        right: -(375px * 0.5);
-        bottom: 375px * 0.5; // half the height of the image (375)
-
-        left: initial;
-        top: initial;
+        min-height: unset;
+        max-height: 100vh;
     }
 
     .plans {

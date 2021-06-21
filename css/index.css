@@ -12,10 +12,6 @@ html {
   padding: 0;
   margin: 0; }
 
-/*
- * Price font's too big for mobile
- *
- */
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 0.9375rem;
@@ -23,38 +19,12 @@ body {
   width: 80%;
   margin: 5% auto;
   text-align: center;
-  background: #f6f6fe;
-  position: relative; }
+  position: relative;
+  min-height: 100vh;
+  background: no-repeat url(../images/bg-top.svg) #f6f6fe;
+  background-position: 57vw -8vw;
+  background-size: 90%; }
 
-.pattern-top {
-  position: absolute;
-  left: 187.5px;
-  top: -20px;
-  z-index: -1; }
-
-.pattern-bottom {
-  position: absolute;
-  bottom: -101px;
-  z-index: -1;
-  left: -70px;
-  display: none; }
-
-/*
-
- 1500 - 187.5px
-
-I have a non-ending problem with positioning background images, I struggled a little with placing these patterns behind
-the cards. What do you use to place the images:
-
-multiple media queries percentages or pixels. ...
-
-
-Pricing-component-with-toggle
-https://github.com/josiahmokob0/Pricing-component-with-toggle
-https://pricing-component-with-toggle-bv8bmtc5p-mokobo.vercel.app/
-
-
-*/
 @media (min-width: 1500px) {
   .pattern-top {
     right: 0;
@@ -63,14 +33,13 @@ https://pricing-component-with-toggle-bv8bmtc5p-mokobo.vercel.app/
     display: block; } }
 
 @media (min-width: 600px) {
-  .pattern-bottom {
-    display: block;
-    left: -187.5px; }
-  .pattern-top {
-    right: -187.5px;
-    bottom: 187.5px;
-    left: initial;
-    top: initial; }
+  body {
+    background-image: url(../images/bg-bottom.svg), url(../images/bg-top.svg);
+    background-position: -9vw bottom, right top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 30vw, 27vw;
+    min-height: unset;
+    max-height: 100vh; }
   .plans {
     display: grid;
     justify-content: center;
@@ -89,16 +58,18 @@ https://pricing-component-with-toggle-bv8bmtc5p-mokobo.vercel.app/
       box-shadow: none; } }
 
 .cycle {
-  margin-bottom: 4rem; }
+  margin: 5rem 0 8rem; }
   .cycle__title {
-    color: #494c5f;
-    font-size: 2rem;
-    margin-bottom: 1.5rem; }
+    color: #6d708d;
+    font-size: 3rem;
+    margin-bottom: 4rem; }
   .cycle label {
-    color: #6d708d; }
+    font-size: 1.5rem;
+    color: #b3b5c6; }
 
 @media (min-width: 600px) {
   .cycle {
+    margin: unset;
     margin-bottom: 6rem; } }
 
 .card {
@@ -172,15 +143,15 @@ https://pricing-component-with-toggle-bv8bmtc5p-mokobo.vercel.app/
 .cycle .radio {
   background: linear-gradient(to left, #696fdd, #a3a8f0);
   border-radius: 99rem;
-  width: 4rem;
-  height: 2rem;
+  width: 5.5rem;
+  height: 2.75rem;
   position: relative;
   cursor: pointer; }
   .cycle .radio .dot {
     position: absolute;
-    left: 0.26667rem;
-    margin: 0.33333rem 0;
-    padding: 0.66667rem;
+    left: 0.36667rem;
+    margin: 0.275rem 0;
+    padding: 1.1rem;
     border-radius: 50%;
     background-color: white; }
 
